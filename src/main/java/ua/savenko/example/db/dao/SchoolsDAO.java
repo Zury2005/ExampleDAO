@@ -5,7 +5,7 @@ import ua.savenko.example.db.medol.School;
 import java.util.List;
 
 public interface SchoolsDAO {
-    String TABLE_NAME = "school";
+    String TABLE_NAME = "schools";
     String SQL_SELECT = "SELECT * FROM " + TABLE_NAME;
     String SQL_SELECT_BY_ID = "SELECT " + School.COLUMN_NAME + ", " + School.COLUMN_DESCRIPTION + ", "+School.COLUMN_PRINCIPAL+" FROM " + TABLE_NAME + " WHERE " + School.COLUMN_ID + " = ?";
     String SQL_INSERT = "INSERT INTO " + TABLE_NAME + "(" + School.COLUMN_NAME + ", " + School.COLUMN_DESCRIPTION + ", "+School.COLUMN_PRINCIPAL+") VALUES(?,?)";
